@@ -1,0 +1,11 @@
+
+<h1 class="text-center" id="showhead"><%= @horse.breed %></h1>
+
+
+<div class="container">
+<div class"col-md-6"><%= link_to "&larr; back to list".html_safe, horses_path %></div>
+  <div class="col-md-6">
+    <p><strong>Origin: </strong> <%= @horse.origin %></p>
+    <p><strong>Bloodtype: </strong> <%= @horse.bloodtype %></p>
+  </div>
+</div>

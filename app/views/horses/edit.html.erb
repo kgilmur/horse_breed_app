@@ -1,0 +1,22 @@
+<div class="row">
+
+  <div class ="col-md-5 col-md-offset-1">
+    <div class="edit">
+      <h1>Edit Details:</h1>
+ <div><%= link_to "&larr; back to list".html_safe, horses_path %></div>
+      <div class="form-group">
+        <%= bootstrap_form_for @horse do |f| %>
+
+        <%= f.text_field :breed, :placeholder => "Horse Name", :class => "form-control"%>
+        <%= f.text_field :origin, :placeholder => "Horse Description", :class => "form-control text-area" %>
+         <%= f.text_field :bloodtype, :placeholder => "Horse Bloodtype", :class => "form-control text-area" %>
+        <br/>
+        <%= f.submit :class => "btn btn-primary"%>
+
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+
+</div>

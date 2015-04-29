@@ -1,0 +1,19 @@
+
+<div class="container">
+  <h1 class="text-center">Horse Breeds</h1>
+
+  <div class="text-center" id="addnewindex"><%= link_to 'Add a New Breed', new_horse_path, :class => "btn btn-primary" %></div>
+
+  <div class="col-md-8">
+    <% @horses.each do |p| %>
+      <h2><strong><%= link_to p.breed, p %></strong></h2>
+      <p><strong>Origin: </strong> <%= p.origin %></p>
+      <p><strong>Bloodtype: </strong> <%= p.bloodtype %></p>
+      <div id="buttonsshowpage">
+      <p><%= link_to 'Delete', p, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary btn-xs" %> &nbsp <%= link_to 'Edit', [:edit, p], :class => "btn btn-primary btn-xs"%></p>
+      </div>
+      <% end %>
+
+  </div>
+
+</div>
