@@ -1,0 +1,19 @@
+<div class="row">
+
+  <div class ="col-md-5 col-md-offset-1">
+    <div class="main">
+
+      <h1 class="test-center">Add a Discipline Tag</h1>
+      <div class="form-group">
+
+       <%= bootstrap_form_for @tags do |f| %>
+
+       <%= f.text_field :name, :placeholder => "Add Discipline Name" %><br/>
+
+       <%= f.submit :class => "btn"%>
+
+       <% end %>
+     </div>
+   </div>
+ </div>
+ </div>

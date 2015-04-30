@@ -8,6 +8,7 @@
     <%= f.text_field :breed, :placeholder =>"Enter the Breed", hide_label: true %>
     <%= f.text_field :origin, :placeholder =>"Enter the Breed's Place of Origin", hide_label: true%>
     <%= f.text_field :bloodtype, :placeholder =>"Enter Bloodtpye (Hot ,Cold, Warm)", hide_label: true %>
+    <%= f.collection_check_boxes :tags, Tag.all, :id, :name %>
     <%= f.submit "Submit new Horse Breed", class:"btn btn-primary btn-lg btn-block" %>
     <% end %>
   </div>

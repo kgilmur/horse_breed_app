@@ -1,0 +1,25 @@
+<div class="container">
+
+<h1 class="text-center">Discipline Tags</h1>
+
+  <div class="text-center" id="addnewindex"><%= link_to 'Breed List', horses_path, :class => "btn btn-primary" %></div>
+  <div class="text-center" id="addnewindex"><%= link_to 'Add New Discipline Tag', tags_new_path, :class => "btn btn-primary" %></div>
+
+  <div class="col-md-8">
+
+<div class="tagindexdivs">
+    <% @tags.each do |tag| %>
+    <% #button_to tag.name, taghorse_path(tag.name), method: :get, :class => "btn btn-xs" %>
+    <%= link_to tag.name, "/horses/tag/#{tag.name}" %>
+       <div id="buttonstagindex">
+ <p><%= link_to 'Delete', tag, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary btn-xs" %></p>
+      </div>
+    <%end%>
+</div>
+
+
+
+
+  </div>
+
+</div>

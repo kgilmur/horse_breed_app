@@ -10,6 +10,7 @@
         <%= f.text_field :breed, :placeholder => "Horse Name", :class => "form-control"%>
         <%= f.text_field :origin, :placeholder => "Horse Description", :class => "form-control text-area" %>
          <%= f.text_field :bloodtype, :placeholder => "Horse Bloodtype", :class => "form-control text-area" %>
+         <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
         <br/>
         <%= f.submit :class => "btn btn-primary"%>
 
