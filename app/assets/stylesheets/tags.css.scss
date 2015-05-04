@@ -1,0 +1,121 @@
+/*// Place all the styles related to the tags controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+body {
+  background-image: url("whitewood2.jpg");
+  background-color: white;
+  background-size: 90%;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 60px;
+}
+
+.well {
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+#horsebreeds {
+  color: black;
+  font-size: 20px;
+}
+
+#breed {
+  font-size: 30px;
+  font: black !important;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+#showtext{
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  background-color: white;
+  font-size: 25px;
+  padding: 15px;
+  padding-left: 25px;
+}
+
+#backlink {
+  font-size: 15px;
+}
+
+#tags {
+  font-size: 20px;
+  margin: 5px;
+}
+
+#viewbreedtag {
+  font-size: 40px;
+}
+
+#logo {
+  max-width: 60px;
+  margin-top: 0px;
+}
+
+.brand {
+  color: white;
+  font-size: 30px;
+}
+
+.navbar {
+  font-size: 15px;
+}
+
+.btn-tag {
+  color: #000000;
+  background-color: #FCFCFC;
+  border-color: #000000;
+}
+
+.btn-tag:hover,
+.btn-tag:focus,
+.btn-tag:active,
+.btn-tag.active,
+.open .dropdown-toggle.btn-tag {
+  color: #000000;
+  background-color: #DBDBDB;
+  border-color: #000000;
+}
+
+.btn-tag:active,
+.btn-tag.active,
+.open .dropdown-toggle.btn-tag {
+  background-image: none;
+}
+
+
+
+.btn-tag-main {
+  color: #000000;
+  background-color: #FCFCFC;
+  border-color: #000000;
+  width: 80px;
+}
+
+.btn-tag-main:hover,
+.btn-tag-main:focus,
+.btn-tag-main:active,
+.btn-tag-main.active,
+.open .dropdown-toggle.btn-tag {
+  color: #000000;
+  background-color: #DBDBDB;
+  border-color: #000000;
+}
+
+.btn-tag-main:active,
+.btn-tag-main.active,
+.open .dropdown-toggle.btn-tag {
+  background-image: none;
+}

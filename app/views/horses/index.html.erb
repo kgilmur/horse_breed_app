@@ -1,44 +1,35 @@
-
 <div class="container">
+
   <h1 class="text-center">Horse Breeds</h1>
 
-  <div class="text-center" id="addnewindex"><%= link_to 'Add a New Breed', new_horse_path, :class => "btn btn-primary" %></div>
+  <br>
 
+  <div class="text-center" id="addnewindex"><%= link_to 'Add a New Breed', new_horse_path, :class => "btn btn-tag btn-lg" %></div>
+
+<br>
   <% @horses.each do |p| %>
-  <div class="well" id="horsebreeds">
-    <div class="col-sm-10">
-      <h2><strong><%= link_to p.breed, p %></strong></h2>
+
+  <div class="well col-sm-10 col-sm-offset-1" id="horsebreeds">
+      <p id="breed"><strong><%= link_to p.breed, p %></strong></p>
       <p><strong>Origin: </strong> <%= p.origin %></p>
       <p><strong>Bloodtype: </strong> <%= p.bloodtype %></p>
+      <p><%= link_to 'Delete', p, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-tag-main btn-md" %> &nbsp <%= link_to 'Edit', [:edit, p], :class => "btn btn-tag-main btn-md"%></p>
 
 
-        <p><%= link_to 'Delete', p, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary btn-xs" %> &nbsp <%= link_to 'Edit', [:edit, p], :class => "btn btn-primary btn-xs"%></p>
 
-    </div>
-  </div>
+
+  <% @search = p.breed %>
+  <% list = flickr.photos.search :text => @search + 'horse', :sort => 'relevance' %>
+  <% results = list.map do |photo| %>
+  <%  "https:/farm3.static.flickr.com/#{photo["server"]}/" "#{photo["id"]}_" "#{photo["secret"]}_n.jpg" %>
   <% end %>
+   <% @result = results.sample %>
 
+  <img src=<%= @result %>>
 </div>
 
 
- <div class="col-sm-12 col-sm-8" id="dbresults" data-spy="scroll" data-target="#sidebar-nav">
 
+  <% end %>
 
-         <% @horses.each do |p| %>
-
-        <div class="well">
-          <div class="col-sm-10">
-           <h2><strong><%= link_to p.breed, p %></strong></h2>
-      <p><strong>Origin: </strong> <%= p.origin %></p>
-      <p><strong>Bloodtype: </strong> <%= p.bloodtype %></p>
-
-
-        <p><%= link_to 'Delete', p, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary btn-xs" %> &nbsp <%= link_to 'Edit', [:edit, p], :class => "btn btn-primary btn-xs"%></p>
-
-          </div>
-
-          </div>
-
-            <% end %>
-
-
+  </div>

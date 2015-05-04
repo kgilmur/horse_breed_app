@@ -7,6 +7,8 @@
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Playfair+Display+SC:700,400' rel='stylesheet' type='text/css'>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 </head>
@@ -23,12 +25,18 @@
     </button>
     <div class="navbar-header">
 
+
+
+      <a class="brand pull-left" href="/"> <img src="assets/horsehead.png" id="logo"> HobbyHorse</a>
+
+
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="/" class="">View Breeds</a></li>
         <li class="active"><%= link_to 'Add Breed', new_horse_path %> </li>
         <li class="active"><%= link_to 'View Disciplines', tags_index_path %> </li>
+        <li class="active"><%= link_to 'Add Discipline', tags_new_path %> </li>
 
       </ul>
     </div>

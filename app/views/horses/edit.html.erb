@@ -1,9 +1,8 @@
-<div class="row">
+<div class="container">
+      <h1 class="text-center">Edit Details</h1>
 
-  <div class ="col-md-5 col-md-offset-1">
-    <div class="edit">
-      <h1>Edit Details:</h1>
- <div><%= link_to "&larr; back to list".html_safe, horses_path %></div>
+  <div class ="well col-md-6 col-md-offset-3">
+
       <div class="form-group">
         <%= bootstrap_form_for @horse do |f| %>
 
@@ -12,12 +11,13 @@
          <%= f.text_field :bloodtype, :placeholder => "Horse Bloodtype", :class => "form-control text-area" %>
          <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
         <br/>
-        <%= f.submit :class => "btn btn-primary"%>
+        <%= f.submit :class => "btn btn-tag btn-lg center-block"%>
 
         <% end %>
 
       </div>
-    </div>
+ <div><%= link_to "&larr; Back to List".html_safe, horses_path %></div>
+
   </div>
 
 </div>

@@ -1,7 +1,13 @@
+
+
+FlickRaw.api_key=ENV["API_KEY"]
+FlickRaw.shared_secret=ENV["API_SECRET"]
+
 class HorsesController < ApplicationController
 
   def index
-   @horses = Horse.all.order('breed ASC')
+  @horses = Horse.all.order('breed ASC')
+
  end
 
  def new
@@ -19,6 +25,20 @@ class HorsesController < ApplicationController
 
   def show
     @horse = Horse.find(params[:id])
+    @search = @horse.breed
+    list = flickr.photos.search :text => @search + 'horse', :sort => 'relevance'
+
+    # results = list.map do |photo|
+    #    "https:/farm3.static.flickr.com/#{photo["server"]}/" "#{photo["id"]}_" "#{photo["secret"]}_n.jpg"
+    # end
+    # @result = results.sample
+
+    @results = list.map do |photo|
+      [FlickRaw.url_b(photo),
+        FlickRaw.url_b(photo)]
+    end
+
+
   end
 
   def destroy
