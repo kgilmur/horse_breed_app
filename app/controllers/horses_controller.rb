@@ -26,7 +26,7 @@ class HorsesController < ApplicationController
   def show
     @horse = Horse.find(params[:id])
     @search = @horse.breed
-    list = flickr.photos.search :text => @search + 'horse', :sort => 'relevance'
+    list = flickr.photos.search :text => @search + ' horse', :sort => 'relevance'
 
     # results = list.map do |photo|
     #    "https:/farm3.static.flickr.com/#{photo["server"]}/" "#{photo["id"]}_" "#{photo["secret"]}_n.jpg"
@@ -34,8 +34,8 @@ class HorsesController < ApplicationController
     # @result = results.sample
 
     @results = list.map do |photo|
-      [FlickRaw.url_b(photo),
-        FlickRaw.url_b(photo)]
+      [FlickRaw.url(photo),
+        FlickRaw.url(photo)]
     end
 
 

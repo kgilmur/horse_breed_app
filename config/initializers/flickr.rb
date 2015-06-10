@@ -1,2 +1,2 @@
-# FlickRaw.api_key=ENV["FLICKR_KEY"]
-# FlickRaw.shared_secret=ENV["FLICKR_SECRET"]
+# API_KEY=f05ebc8053972037f331f7d82d0c6dcb
+# API_SECRET=a03fdcbd8e94aece

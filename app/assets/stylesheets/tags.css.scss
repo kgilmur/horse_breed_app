@@ -3,20 +3,42 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
 body {
-  background-image: url("whitewood2.jpg");
+  background-image: url("laceburlapbackground2.jpg");
   background-color: white;
-  background-size: 90%;
-  font-family: 'Playfair Display', serif;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 70px;
 }
 
 h1 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 60px;
 }
 
 .well {
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: 5px 5px 5px #888888;
+}
+
+.form-group {
+  font-size: 20px;
+  background-color: #f5f5f5;
+}
+
+#myCarousel {
+  height: 360px;
+  width: 550px;
+  margin: 0;
+}
+
+#myCarousel img {
+  max-height: 350px;
+  margin: 0 auto;
+}
+
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
 }
 
 #horsebreeds {
@@ -24,8 +46,12 @@ h1 {
   font-size: 20px;
 }
 
+#pic {
+  display: inline-block;
+}
+
 #breed {
-  font-size: 30px;
+  font-size: 40px;
   font: black !important;
 }
 
@@ -37,17 +63,38 @@ a:hover {
   color: black;
 }
 
+a:active {
+  color: black;
+}
+
 #showtext{
   border-radius: 5px;
   box-shadow: 5px 5px 5px #888888;
   background-color: white;
   font-size: 25px;
   padding: 15px;
-  padding-left: 25px;
+  margin-left: 0px !important;
+  margin-top: 70px;
 }
 
-#backlink {
-  font-size: 15px;
+#showhead {
+  margin-bottom: 50px;
+}
+
+strong {
+  font-size: 30px;
+}
+
+.backlink {
+  font-size: 20px;
+}
+
+.backlink:active {
+  color: black;
+}
+
+.btn-tag.btn-md {
+  margin: 5px;
 }
 
 #tags {
@@ -61,7 +108,8 @@ a:hover {
 
 #logo {
   max-width: 60px;
-  margin-top: 0px;
+  margin-top: -5px;
+  margin-right: -10px;
 }
 
 .brand {
@@ -69,8 +117,39 @@ a:hover {
   font-size: 30px;
 }
 
+a.brand {
+  color: black;
+  padding-top: 10px;
+}
+
+a.brand:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a.brand:active {
+  color: black;
+  text-decoration: none;
+}
+
 .navbar {
-  font-size: 15px;
+  font-size: 20px;
+  font-color: black;
+  background-color: white;
+}
+
+.navbar-nav>.active>a {
+  background-color: white !important;
+  line-height: 2;
+}
+
+.navbar-nav>.active>a:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.backlinks {
+  font-size: 20px;
 }
 
 .btn-tag {
@@ -84,9 +163,14 @@ a:hover {
 .btn-tag:active,
 .btn-tag.active,
 .open .dropdown-toggle.btn-tag {
-  color: #000000;
-  background-color: #DBDBDB;
-  border-color: #000000;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-tag:hover a {
+  color: white;
+  text-decoration: none;
 }
 
 .btn-tag:active,
@@ -98,9 +182,9 @@ a:hover {
 
 
 .btn-tag-main {
-  color: #000000;
-  background-color: #FCFCFC;
-  border-color: #000000;
+  color: white;
+  background-color: black;
+  border-color: black;
   width: 80px;
 }
 
@@ -109,9 +193,9 @@ a:hover {
 .btn-tag-main:active,
 .btn-tag-main.active,
 .open .dropdown-toggle.btn-tag {
-  color: #000000;
-  background-color: #DBDBDB;
-  border-color: #000000;
+  color: black;
+  background-color: white;
+  border-color: black;
 }
 
 .btn-tag-main:active,

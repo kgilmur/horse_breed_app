@@ -6,7 +6,7 @@
 #       [FlickRaw.url_s(photo),
 #         FlickRaw.url_b(photo)]
 
-      require 'flickraw'
+require 'flickraw'
 
 FlickRaw.api_key="f05ebc8053972037f331f7d82d0c6dcb"
 FlickRaw.shared_secret="a03fdcbd8e94aece"
@@ -29,6 +29,6 @@ response = request.run
 
 puts response
 
-# data = JSON.parse(response.body)
+data = JSON.parse(response.body)
 
-# ap data["results"].map { |t| ["artistName"] }
+ap data["results"].map { |t| ["artistName"] }

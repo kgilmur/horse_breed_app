@@ -1,23 +1,18 @@
 <div class="container">
-    <h1 class="text-center" id="viewbreedtag">View Breeds by Discipline Tag: <%= params[:tag] %></h1>
-  <div class="col-md-6 col-md-offset-3">
+  <h1 class="text-center" id="viewbreedtag">View Breeds by Discipline Tag: <%= params[:tag] %></h1>
 
-
-
-
+  <div class="col-md-10 col-md-offset-1">
+    <br>
+    <br>
     <div class="well col-md-10 col-md-offset-1">
-
-          <% @horses.each do |horse| %>
-<!--           <button class="btn btn-tag btn-lg"><%= link_to horse.breed, horse %></button> -->
-          <%= link_to horse.breed, horse, :class => "btn btn-tag btn-lg" %>
-
-
-          <% end %>
-
-<br>
-<br>
-<br>
-    <div><%= link_to "&larr; back to list".html_safe, horses_path %></div><br/>
+      <% @horses.each do |horse| %>
+      <%= link_to horse.breed, horse, :class => "btn btn-tag btn-lg" %>
+      <% end %>
+      <br>
+      <br>
+      <br>
+      <div class="backlink"><%= link_to "&larr; back to list".html_safe, horses_path %></div><br/>
     </div>
   </div>
+
 </div>
