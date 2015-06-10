@@ -17,7 +17,7 @@
       <% @search = p.breed %>
       <% list = flickr.photos.search :text => @search + 'horse', :sort => 'relevance' %>
       <% results = list.map do |photo| %>
-      <%  "https:/farm3.static.flickr.com/#{photo["server"]}/" "#{photo["id"]}_" "#{photo["secret"]}_n.jpg" %>
+      <%  "https://farm3.static.flickr.com/#{photo["server"]}/" "#{photo["id"]}_" "#{photo["secret"]}_n.jpg" %>
       <% end %>
       <% @result = results.sample %>
 
