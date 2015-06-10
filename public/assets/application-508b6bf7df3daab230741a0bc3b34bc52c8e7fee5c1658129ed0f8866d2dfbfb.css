@@ -1,0 +1,255 @@
+/*// Place all the styles related to the tags controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+/* line 6, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+body {
+  background-image: url("laceburlapbackground2.jpg");
+  background-color: white;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 70px;
+}
+
+/* line 15, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+}
+
+/* line 20, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.well {
+  border-radius: 0px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+/* line 25, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.form-group {
+  font-size: 20px;
+  background-color: #f5f5f5;
+}
+
+/* line 30, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#myCarousel {
+  height: 360px;
+  width: 550px;
+  margin: 0;
+}
+
+/* line 36, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#myCarousel img {
+  max-height: 350px;
+  margin: 0 auto;
+}
+
+/* line 41, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.right.carousel-control, .left.carousel-control {
+  opacity: 0;
+}
+
+/* line 45, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#horsebreeds {
+  color: black;
+  font-size: 20px;
+}
+
+/* line 50, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#pic {
+  display: inline-block;
+}
+
+/* line 54, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#breed {
+  font-size: 40px;
+  font: black !important;
+}
+
+/* line 59, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+a {
+  color: black;
+}
+
+/* line 63, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+a:hover {
+  color: black;
+}
+
+/* line 67, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+a:active {
+  color: black;
+}
+
+/* line 71, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#showtext {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  background-color: white;
+  font-size: 25px;
+  padding: 15px;
+  margin-left: 0px !important;
+  margin-top: 70px;
+}
+
+/* line 81, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#showhead {
+  margin-bottom: 50px;
+}
+
+/* line 85, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+strong {
+  font-size: 30px;
+}
+
+/* line 89, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.backlink {
+  font-size: 20px;
+}
+
+/* line 93, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.backlink:active {
+  color: black;
+}
+
+/* line 97, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag.btn-md {
+  margin: 5px;
+}
+
+/* line 101, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#tags {
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* line 106, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#viewbreedtag {
+  font-size: 40px;
+}
+
+/* line 110, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+#logo {
+  max-width: 60px;
+  margin-top: -5px;
+  margin-right: -10px;
+}
+
+/* line 116, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.brand {
+  color: white;
+  font-size: 30px;
+}
+
+/* line 121, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+a.brand {
+  color: black;
+  padding-top: 10px;
+}
+
+/* line 126, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+a.brand:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 131, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+a.brand:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 136, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.navbar {
+  font-size: 20px;
+  font-color: black;
+  background-color: white;
+}
+
+/* line 142, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.navbar-nav > .active > a {
+  background-color: white !important;
+  line-height: 2;
+}
+
+/* line 147, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.navbar-nav > .active > a:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* line 152, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.backlinks {
+  font-size: 20px;
+}
+
+/* line 156, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag {
+  color: #000000;
+  background-color: #FCFCFC;
+  border-color: #000000;
+}
+
+/* line 162, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag:hover,
+.btn-tag:focus,
+.btn-tag:active,
+.btn-tag.active,
+.open .dropdown-toggle.btn-tag {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+/* line 172, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag:hover a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 177, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag:active,
+.btn-tag.active,
+.open .dropdown-toggle.btn-tag {
+  background-image: none;
+}
+
+/* line 185, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag-main {
+  color: white;
+  background-color: black;
+  border-color: black;
+  width: 80px;
+}
+
+/* line 192, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag-main:hover,
+.btn-tag-main:focus,
+.btn-tag-main:active,
+.btn-tag-main.active,
+.open .dropdown-toggle.btn-tag {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+/* line 202, /Users/KatherineGilmur/WDI/Projects/horse_breed_app/horse_breed_app/app/assets/stylesheets/tags.css.scss */
+.btn-tag-main:active,
+.btn-tag-main.active,
+.open .dropdown-toggle.btn-tag {
+  background-image: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+*/
+
